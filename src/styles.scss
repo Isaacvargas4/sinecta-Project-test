@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import "node_modules/ol/ol.css";
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+#toast-container > div {
+  opacity: 1;
+}
+.toast {
+  position: absolute;
+
+  font-size: initial !important;
+  border: initial !important;
+  backdrop-filter: blur(0) !important;
+}
+.toast-success {
+  position: absolute;
+  background-color: #51A351 !important;
+}
+.toast-error {
+  background-color: #BD362F !important;
+}
+.toast-info {
+  position: absolute;
+  background-color: #2F96B4 !important;
+}
+.toast-warning {
+  background-color: #F89406 !important;
+}
+
+
+// regular style toast
+@import 'ngx-toastr/toastr';
